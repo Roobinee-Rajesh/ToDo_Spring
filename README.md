@@ -28,12 +28,12 @@ I have created rest api called todospringboot
 -------------BELOW ARE MY API'S WHICH HAVE TODO'S---------------------
  
  
-    GET:-http://localhost:8080/todo/api/all  
+    GET:-http://localhost:8080/api/todo/
  
-    GET:-http://localhost:8080/todo/api/all/1  
+    GET:-http://localhost:8080/api/todo/1  
  
-    POST:-http://localhost:8080/todo/api/createtodo  
+    POST:-http://localhost:8080/api/todo/add
  
-    PUT:-http://localhost:8080/todo/api/updatetodo  
+    PUT:-http://localhost:8080/api/todo
  
-    DELETE:-http://localhost:8080/todo/api/delete/1  
+    DELETE:-http://localhost:8080/api/todo/delete/1  
