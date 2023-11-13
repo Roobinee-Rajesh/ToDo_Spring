@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class ToDoController {
@@ -18,7 +19,7 @@ public class ToDoController {
     }
 
     @GetMapping("/todo/{id}")
-    public List<ToDo> getToDo(@PathVariable int id) {
+    public ToDo getToDo(@PathVariable int id) {
         return toDoRepository.findById(id);
     }
 

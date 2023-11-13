@@ -29,10 +29,9 @@ public class ToDoRepository {
         return jdbcTemplate.query("SELECT * FROM todo",new ToDoRowMapper());
     }
 
-    public List<ToDo> findById(int id) {
-        jdbcTemplate.query("SELECT * FROM todo WHERE id=?",
+    public ToDo findById(int id) {
+        return jdbcTemplate.queryForObject("SELECT * FROM todo WHERE id=?",
                 new Object[]{id},new BeanPropertyRowMapper<>(ToDo.class));
-        return findAll();
     }
 
     public List<ToDo> insert(ToDo toDo){
